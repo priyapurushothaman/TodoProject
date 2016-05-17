@@ -1,0 +1,137 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-i3vvu4');
+	src:url('../fonts/icomoon.eot?#iefix-i3vvu4') format('embedded-opentype'),
+		url('../fonts/icomoon.woff2?-i3vvu4') format('woff2'),
+		url('../fonts/icomoon.ttf?-i3vvu4') format('truetype'),
+		url('../fonts/icomoon.woff?-i3vvu4') format('woff'),
+		url('../fonts/icomoon.svg?-i3vvu4#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check:before {
+	content: "\e623";
+}
+.icon-profile:before {
+	content: "\e624";
+}
+.icon-exit-right:before {
+	content: "\e619";
+}
+.icon-equalizer:before {
+	content: "\e61a";
+}
+.icon-contacts:before {
+	content: "\e61b";
+}
+.icon-apartment:before {
+	content: "\e61c";
+}
+.icon-laptop-phone:before {
+	content: "\e61d";
+}
+.icon-calendar-check:before {
+	content: "\e61e";
+}
+.icon-cashier:before {
+	content: "\e61f";
+}
+.icon-graduation-hat:before {
+	content: "\e620";
+}
+.icon-truck:before {
+	content: "\e621";
+}
+.icon-users2:before {
+	content: "\e622";
+}
+.icon-home:before {
+	content: "\e616";
+}
+.icon-shield-check:before {
+	content: "\e617";
+}
+.icon-shield-alert:before {
+	content: "\e618";
+}
+.icon-plus:before {
+	content: "\e615";
+}
+.icon-lifebuoy:before {
+	content: "\e613";
+}
+.icon-lamp:before {
+	content: "\e614";
+}
+.icon-camera2:before {
+	content: "\e612";
+}
+.icon-hammer-wrench:before {
+	content: "\e611";
+}
+.icon-exit-up:before {
+	content: "\e60f";
+}
+.icon-arrow-up-right:before {
+	content: "\e610";
+}
+.icon-list:before {
+	content: "\e601";
+}
+.icon-user:before {
+	content: "\e602";
+}
+.icon-user-plus:before {
+	content: "\e603";
+}
+.icon-down-arrow:before {
+	content: "\e604";
+}
+.icon-down-box:before {
+	content: "\e605";
+}
+.icon-menu:before {
+	content: "\e606";
+}
+.icon-share:before {
+	content: "\e607";
+}
+.icon-cog:before {
+	content: "\e608";
+}
+.icon-calendar-31:before {
+	content: "\e609";
+}
+.icon-calendar-full:before {
+	content: "\e60a";
+}
+.icon-chevron-right:before {
+	content: "\e60b";
+}
+.icon-arrow-right:before {
+	content: "\e60c";
+}
+.icon-chevron-left:before {
+	content: "\e60d";
+}
+.icon-arrow-left:before {
+	content: "\e60e";
+}
+.icon-cross:before {
+	content: "\e600";
+}

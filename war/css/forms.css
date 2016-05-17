@@ -1,0 +1,322 @@
+/*********************************************
+	Forms	
+*********************************************/
+input,
+textarea, select, .dropdown, .toggle-opt {
+  height: 45px;
+  padding: 6px 3px 0; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: solid 1px #fff;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0px;
+  box-shadow: none;
+  box-sizing: border-box; 
+  display: block;
+  position: relative;
+  font-size: 1em;
+  font-weight: 400;
+  transition: all 0.1s ease;
+  margin-bottom: 5px;
+  color: #0;
+  width: calc(100% - 17px);
+  /* Firefox */
+  width: -moz-calc(100% - 17px);
+  /* WebKit */
+  width: -webkit-calc(100% - 17px);
+  /* Opera */
+  width: -o-calc(100% - 17px);
+  /* Standard */
+  width: calc(100% - 17px);
+  margin-left:17px;   
+  outline:none !important;
+  
+  }
+
+.row .dropdown {
+	cursor: pointer;
+}
+.row .dropdown.col {
+	width: 170px;
+	display: inline-block;
+}
+.row .to{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	line-height: 32px;
+	border-radius: 50%;
+	border: 1px solid #979797;
+	color: #999999;
+	text-align: center;
+	margin: 8px 0px 0px 15px;
+}	
+.row .dropdown button{
+	color: rgba(51,51,51,.5);
+	background: none;
+	border: 0px;
+	width: 100%;
+	text-align: left;
+	padding: 7px 0px 0px;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+
+button:focus {
+	outline:0;
+}
+
+.row .dropdown  i{
+	float: right;
+	margin:4px 10px 0px 0px;
+}	
+.row .dropdown.focus {
+	border: 1px solid #999 !important;
+	box-shadow: 1px 2px 8px rgba(0,0,0,.2);
+
+}
+.row .dropdown:hover {
+	border-bottom: 1px solid #999 !important;
+}
+.row .dropdown:hover button, 
+.row .dropdown.focus button{
+	padding-left: 10px;
+	color: rgba(51,51,51,1);
+	box-shadow: none;
+}	
+.row .dropdown ul{
+	display: none;
+	margin:0px;
+	padding: 0px;
+	list-style-type: none;
+	position: absolute;
+	z-index: 11;
+	top: 44px;
+	left: 0px;
+	background-color: #fff !important;
+	border: 1px solid #999;
+	border-top: 0px;
+	box-shadow: 1px 3px 8px rgba(0,0,0,.2);
+	box-sizing: border-box; 
+	width: 100%;
+	max-height: 200px;
+	overflow-y: scroll;
+}
+.row .dropdown.focus ul.dropdown-list{
+	display: block;
+}	
+.row .dropdown ul li{
+	font-size: 16px;
+	padding: 10px 15px;	
+ 	margin:0px;
+ 	font-weight: normal;
+	-moz-transition: all 0.2s ease;	
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease; 	
+}	
+.row .dropdown ul li:hover,
+.row .dropdown ul li.selected{
+	color: #fff;
+	background: #09CBD2;
+}
+fieldset.row  p {
+	color: #333333;
+	font-size: 16px;
+	padding: 18px 0px 15px;
+	margin: 0px;
+}
+.check-list, .opt-list {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.check-list li{
+	border-bottom: 1px solid #ddd;
+	padding: 8px 0px;
+	margin: 0px;
+	-moz-transition: all 0.2s ease;	
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.check-list li:hover {
+	border-bottom: 1px solid #999 !important;
+ }
+.check-list li:after{
+	clear: both;
+	display: block;
+	content: '';
+}	
+.check-list li b{
+	font-weight: normal;
+	background: none;
+ 	border-radius:21px; 
+ 	padding: 3px 20px 3px 3px;
+ 	float: left;
+ 	cursor: pointer;
+ 	color: rgba(51,51,51,.5);
+}
+.check-list li.selected b{
+	background: rgba(0,196,203,.15);
+	color: rgba(51,51,51,1);
+}
+.check-list li b cite{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 28px;
+	border-radius: 50%;
+	background: #E4ECEC;
+	text-align: center;
+	vertical-align: middle;
+	color: #979797;
+	margin-right: 10px;
+	font-weight: 700;
+	cursor: pointer;
+}	
+.check-list li.selected b cite{
+	background: #00C4CB;
+	color: #fff;
+}
+.check-list span{
+	float: right;
+	color: rgba(51,51,51,.5);
+	line-height: 36px;
+	visibility: hidden;
+	cursor: pointer;
+}
+.check-list li.selected span{
+	visibility: visible;
+}
+.check-list span i{
+	float: right;
+	width: 21px;
+	height: 21px;
+	background: #E4ECEC;
+	border: 1px solid #E4ECEC;	
+	border-radius: 3px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 21px;
+	margin:7px 7px 0px;
+}	
+.check-list span.selected{
+	color: rgba(51,51,51,1);
+}
+.check-list span.selected i{
+	border: 1px solid #000;
+	background: #fff;
+	color: #000;
+	font-weight: 700;
+}	
+.opt-list li {
+	line-height: 24px;
+	margin: 0px;
+	padding: 5px 0px;
+	color: rgba(51,51,51,.5);
+	cursor: pointer;
+}
+.opt-list li > cite{
+	float: left;
+	width: 18px;
+	height: 18px;
+	border: 2px solid #B4C0C0;
+	background: #fff;
+	padding: 2px;
+	border-radius: 50%;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.opt-list li cite > cite{
+	background: #00C4CB;	
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;	
+	display: none;
+}
+.opt-list li.selected {
+	color: rgba(51,51,51,1);
+}	
+.opt-list li.selected cite > cite{
+	display: block;
+}
+.toggle-opt:hover{
+	border-bottom: 1px solid #999 !important;
+}	
+.toggle-opt b{
+	line-height: 35px;
+	display: inline-block;
+	font-weight: 300;
+	color: rgba(51,51,51,.5);
+}
+.toggle-opt.on b{
+	color: rgba(51,51,51,1);	
+}	
+.toggle-opt i{
+	float: right;
+	position: relative;
+	background: #E4ECEC;
+	font-size: 14px;
+	width: 60px;
+	height: 30px;
+	border-radius: 15px;
+	line-height: 30px;
+	padding: 0px 10px;
+	color: #979797;
+	text-align: right;
+	font-style: normal;
+	cursor: pointer;
+}
+.toggle-opt i:after,
+.toggle-opt i:before{
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";	
+  width: 30px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px;  
+}
+.toggle-opt i:before{
+    right: 1px;
+    background-color: #f1f1f1;
+
+ 
+}
+.toggle-opt i:after{
+    width: 30px;
+    background-color: #fff;
+ 
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+    -webkit-transition: margin 0.4s;
+    -moz-transition: margin 0.4s;
+    -o-transition: margin 0.4s;
+    transition: margin 0.4s;
+}
+.toggle-opt.on i{
+	background-color: #00C4CB;
+	text-align: left;
+	color: #fff;
+}
+.toggle-opt.on i:before{
+	margin-left: 47px;
+	background: none;
+}
+
+.toggle-opt.on i:after{
+	margin-left: 47px;
+}
+.toggle-opt span{
+	float: right;
+	padding-right: 10px;
+	color: #999;
+	font-size: 13px;
+	line-height: 32px;
+}	

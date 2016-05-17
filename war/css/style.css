@@ -1,0 +1,1099 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic);
+
+body {
+	background: #F6F9F9;
+	background: #EAF2F4;
+	font-size: 16px;
+	font-weight: 300;
+  	font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* Larger than tablet */
+@media (max-width: 1024px) {
+	body, #app-bar {
+		font-size:13px !important;
+	}
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+hr {
+	clear: both;
+}
+img {
+	border-radius: 4px;
+}
+a {
+	color: #0FB5BB;
+	text-decoration: none;
+}
+button, a.button {
+	padding: 12px 15px;
+	background: #F6F9F9;
+	color: #;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 13px;
+	margin-right: 6px;
+	transition: all 150ms
+/*	box-shadow: 0px 1px 3px rgba(0,0,0,.05);*/
+}
+button span, a.button span {
+	margin-right: 5px;
+	position: relative;
+	top: 1px;
+}
+
+button:hover, a.button:hover {
+		box-shadow: 0px 1px 4px rgba(0,0,0,.1);
+		border: 1px solid #B5BBBB;
+		color: #222;
+	}
+
+/*********************************************
+	Grid Structure	
+*********************************************/
+
+.container {
+	width: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box; 
+	margin-top: 160px;
+	animation: fadein .4s;
+	-moz-animation: fadein .4s; /* Firefox */
+	-webkit-animation: fadein .4s; /* Safari and Chrome */
+	-o-animation: fadein .4s; /* Opera */
+}
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 90%; }
+  .column,
+  .columns {
+    margin-left: 2%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 14.9999999999%; }
+  .three.columns                  { width: 23.3333333333%; }
+  .four.columns                   { width: 31.9999999999%; }
+  .five.columns                   { width: 40.3333333333%; }
+  .six.columns                    { width: 48.9999999999%; }
+  .seven.columns                  { width: 57.3333333333%; }
+  .eight.columns                  { width: 65.9999999999%; }
+  .nine.columns                   { width: 74.6666666667%; }
+  .ten.columns                    { width: 83%; }
+  .eleven.columns                 { width: 92.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: 31.9999999999%; }
+  .two-thirds.column              { width: 65.9999999999%; }
+  
+  .one-fourth.column              { width: 23.3333333333%; }
+  .one-half.column                { width: 49%; }
+
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.new-gray-btn {
+    background: #F1F5F7;
+    border-color: #F1F5F7;
+    font-size: 13px !important;
+    line-height: 32px !important;
+    margin-top: 5px;
+    padding: 0 15px !important;
+    color: #252C32;
+    border-style: solid;
+    border-width: 1px;
+    height: 34px;
+    border-radius: 3px !important;
+    cursor: pointer;
+    border: solid 1px #D7D7D7;
+}
+.new-green-btn {
+    background: #27C3BB !important;
+    color: #FFF !important;
+    border-color: #27C3BB !important;
+}
+/*********************************************
+	Typography		
+*********************************************/
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.75em;
+  font-weight: 300; 
+	color: #5a5a5a;
+	font-weight: 300;
+}
+h5, h6 {
+  margin-bottom: 1.25em;
+}
+h1 { font-size: 2.6em; line-height: 1.2;  }
+h2 { font-size: 2em; line-height: 1.25; }
+h3 { font-size: 1.5em; line-height: 1.3;  }
+h4 { font-size: 1.4em; line-height: 1.3; margin-bottom: -.85em; }
+h1 span {
+	margin-right: 10px;
+}
+h3.gallery-header {
+	margin: 1.25em 0 .5em;
+}
+p {
+	color: #555;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.4em;
+	margin: 1.75em 0;
+}
+ol {
+	margin: 1.75em 0;
+	color: #555;
+}
+ol li {
+	margin: .75em 0;
+}
+ol > li {
+  margin: .45em 0;
+  padding: 0 0 0 2em;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.65em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+.card p.sub-par {
+	font-size: 1.2em;
+	font-weight: 300;
+	margin-bottom: 2em;
+}
+.floating-btn {
+	position: fixed;
+	height: 60px;
+	width: 60px;
+	background: #F74C4C;
+	color: #fff;
+	font-size: 1.8em;
+	border-radius: 50%;
+	top: 94px;
+	font-weight: lighter;
+	z-index: 20;
+	right: 30px;
+	text-align: center;
+	line-height: 60px;
+	box-shadow: 0px 2px 8px rgba(0,0,0,.2);
+	cursor: pointer;
+	top: 170px;
+
+}
+.dialog-wrapper .floating-btn {
+	z-index: 30;
+	right: 4%;
+	top: 43px;
+	position: absolute;
+}
+.button {
+	height: 50px;
+	line-height: 50px;
+}
+.button.button-primary {
+	background: #F74C4C;
+	border: 1px solid #F74C4C;
+	color: #fff;
+}
+.button.button-primary:hover {
+	background: #E53E3E;
+	border: 1px solid #E53E3E;
+}
+
+/*********************************************
+	Sidebar		
+*********************************************/
+
+/** Side Menu **/
+
+#side-menu {
+	position: fixed;
+	width: 100px;
+	height: 100%;
+	background: #2E363E;
+	top: 70px;
+}
+#side-menu ul { 
+	list-style: none;
+	font-size: 1.8em;
+	color: #fff;
+	margin-top: 10%;
+	text-align: center;
+}
+#side-menu ul li { 
+	padding: 6% 10%;
+	margin: 0;
+	position: relative;
+}
+#side-menu ul li a {
+	display: block;
+	color: #fff;
+	padding: .45em 0;
+	opacity: .4;
+	border-radius: 4px;
+	border: 1px solid transparent;
+  	transition: all 0.2s ease;
+} 
+#side-menu ul li a small {
+	font-size: .3em;
+	font-weight: 700 !important;
+	text-transform: uppercase;
+	display: block;
+	margin-top: 1em;
+/*	display: none;*/
+}
+#side-menu ul li a:hover {
+	background: rgba(246,249,249,.15);
+	opacity: .8;
+	box-shadow: 0px 1px 2px rgba(0,0,0,.3);
+	border: 1px solid rgba(200,200,200,.1);
+	
+}
+#side-menu ul li#premium-icon a {
+	color: #0FB5BB;
+	opacity: 1;	
+}
+#side-menu ul li#me-icon {
+	position: absolute;
+	bottom: 70px;
+	width: 100%;
+	padding: 5px 0 10px 0;
+	margin: 0px;
+	background: rgba(246,249,249,.15);	
+}
+#side-menu ul li#me-icon a{
+	opacity: 1;
+	margin: 6% 10%;
+}
+#side-menu ul li a:active {
+	box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+	background: rgba(246,249,249,.2);
+}
+#side-menu ul li#premium-icon a:hover {
+	background: #1AB7A2 url(../img/header-bg.png);
+	opacity: 1;
+	color: #fff;
+}
+#side-menu ul li.active {
+	background: rgba(0,0,0,.4);
+}
+#side-menu ul li.active a:hover {
+	background: none;
+	border: 1px solid transparent;
+}
+#side-menu ul li.active a {
+	opacity: 1;
+}
+#side-menu ul li:hover .hint {
+	display: block;
+}
+
+#side-menu .hint {
+	position: absolute;
+	background: #fff;
+	box-shadow: 0px 3px 6px rgba(0,0,0,.2);
+	border: 1px solid #ccc;
+	min-width: 200px;
+	left: 110px;
+	z-index: 1000;
+	top: 0px;
+	display: block;
+	font-size: 16px;
+	padding: 1em;
+	color: #333;
+	text-align: left;
+	min-height: 3em;
+	display: none;
+	width: 300px;
+	opacity: 1;
+}
+
+
+#app-wrap {
+	margin-left: 100px;
+}
+#app-bar nav {
+	display: none;
+}
+.main-content {
+	margin-top: 7em !important;
+/*	min-width: 725px;*/
+}
+h1 span {
+	display: none;
+}
+
+#main-logo {
+	width: 100px;
+	height: 100%;
+	float: left;
+	background: red;
+	background: #009C98 url(../img/setmore-logo.png) no-repeat center;
+}
+
+
+/*********************************************
+	App Bar		
+*********************************************/
+
+#app-bar {
+	background: #00BEB9;
+	background-position: bottom;
+	background-size: cover;
+	box-shadow: 0px 3px 5px rgba(0,0,0,.15);
+	width: 100%;
+	color: #fff;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	font-weight: 400;
+}
+#app-bar nav {
+	background: rgba(0,0,0,.15);
+	min-height: 55px;
+}
+#app-bar nav li a {
+	opacity: .8;
+	line-height: 55px;
+	font-size: .875em;
+	text-transform: uppercase;
+}
+#app-bar nav li#logo a{
+	background:url('../img/setmore-logo.png') no-repeat 19px 17px;
+	width: 19px;
+	opacity: 1;
+}
+#app-bar nav li a:hover {
+	opacity: 1;
+}
+#app-bar nav li:hover {
+	background: rgba(0,0,0,.075);
+}
+#app-bar nav li#logo a {
+	padding: 0 1.5em;
+}
+
+/** Toolbar **/
+
+#toolbar {
+	padding: 0 1.5em 0 0;
+	min-height: 70px;
+	clear: both;
+	height: 5em;
+}
+#toolbar h1 {
+	float: left;
+	line-height: 80px;
+	font-size: 1.5em;
+	line-height: 70px;
+	margin: 0;
+	color: #fff;
+	padding: 0 1.5em;
+}
+#toolbar h1 span {
+	position: relative;
+	top: 2px;
+}
+#toolbar button {
+ 	margin-left: 91%;
+    line-height: 20px;
+    margin-top: -20px;
+}
+#toolbar button:hover {
+	background: #00BEB9;
+}
+
+/** Block list **/
+
+ul.block {
+	margin: 0;
+}
+ul.block li {
+	margin: 0;
+	display: inline-block;
+	line-height: 45px;
+}
+ul.block li a {
+	display: block;
+	padding: 0 10px;
+	color: #fff;
+	text-decoration: none;
+}
+#toolbar.nav-up {
+  top: -65px;
+  position: relative;
+}
+
+
+/*********************************************
+	Tabs
+*********************************************/
+
+ul.tabs {
+	list-style: none;
+	border-bottom: 1px solid #ccc;
+	height: 50px;
+	margin-bottom: 40px;
+}
+ul.tabs li { 
+	float: left;
+	line-height: 50px;
+	margin: 0 1.5%;
+	padding: 0 5px;
+	font-weight: 400;
+	opacity: .37;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 0.875em;
+}
+ul.tabs li:first-child {
+	margin-left: 0;
+} 
+ul.tabs li.active-tab {
+	border-bottom: 4px solid #0FB5BB;
+	line-height: 47px;
+	position: relative;
+	z-index: 1;
+	opacity: 1;
+} 
+
+/** Tabs in dialog header **/
+
+.dialog-wrapper header ul.tabs {
+	margin:0 0 0 30.65%;
+	position: relative;
+	border-bottom: none;
+	top: 11px;
+}
+.dialog-wrapper header ul.tabs li { 
+	line-height: 65px;
+	color: #fff;
+	opacity: .67;
+}
+.dialog-wrapper header ul.tabs li.active-tab {
+	opacity: 1;
+}
+.dialog-wrapper header ul.tabs li.active-tab {
+	border-bottom-color: #fff;
+}
+
+/*********************************************
+	Sidenav		
+*********************************************/
+	
+ul.sidebar-nav {
+	margin-bottom: 0;
+	font-weight: 400;
+	margin: 7% 7%;
+}
+ul.sidebar-nav.cats {
+	margin: 0;
+}
+ul.sidebar-nav li {
+	list-style: none;
+	margin:0;
+}
+ul.sidebar-nav li a {
+	display: block;
+	padding: 17px 20px;
+	color: #888;
+/*	border-bottom: 1px solid #eee;*/
+	font-size: 1em;
+/*	text-transform: uppercase;*/
+}
+ul.sidebar-nav li a span {
+	margin-right: 15px;
+	text-align: center;
+}
+ul.sidebar-nav li a:hover {
+/*	border: 1px solid #ddd;*/
+/*	box-shadow: 0px 1px 0px rgba(0,0,0,.1);*/
+}
+ul.sidebar-nav li.active a {
+	background: #EDF3F3;
+	border: #ddd solid 1px;
+	cursor: pointer;
+	font-weight: bold;
+	color: #333;
+	border-radius: 6px;
+}
+ul.sidebar-nav.cats li.active a {
+	border: none;
+	border-radius: 0;
+}
+
+
+/*********************************************
+	Cards		
+*********************************************/
+
+.card, form fieldset, ul.grouped-cards, .card.no-click  {
+	background: #fff;	
+	padding: 2%;
+	border-radius: 4px;
+	box-shadow: 0px 1px 3px rgba(0,0,0,.1);
+	margin-top: .6667em;
+	margin-bottom: .6667em;
+	border: 1px solid #fff;
+	transition: all 150ms
+}
+.card .card, .card .card:hover {
+	padding: 0;
+	box-shadow: none;
+	margin: 0;
+	border: none;
+	}
+.card:hover, form fieldset.row:hover {
+	cursor: pointer;
+	box-shadow: 0px 3px 5px rgba(0,0,0,.1);
+/*	border: 1px solid #bbb;*/
+	border: 1px solid #CCD3D3;
+	border-bottom: 1px solid #B5BBBB;
+}
+form fieldset.row:hover {
+	cursor: auto;
+}
+.card .ten {
+	padding-left: 10px;
+}
+#booking-page-card {
+/*	background: #fff url(../img/booking-banner.png) no-repeat right;*/
+	padding-bottom: 0;
+	padding-right: 0;
+	position: relative;
+	height: 25em;
+}
+#booking-banner{
+	background: url(../img/booking-banner.png) no-repeat left;
+	background-size: cover;
+	height: 100%;	
+}
+#booking-page-card .card {
+	padding: 4% 5% 5%;
+	background: none;
+}
+#booking-page-card ul {
+	margin-top: 20px;
+}
+.card p {
+	margin: 0.5em 0 1em;
+}
+.card h3, .card h4 {
+	margin-bottom: 0px;
+}
+
+/** No click cards**/
+
+.card.no-click, .card.no-click:hover {
+	padding: 0;
+/*	border: 1px solid #ddd;
+	border-bottom: 1px solid #bbb;*/
+}
+.card.no-click:hover {
+	box-shadow: 0px 1px 3px rgba(0,0,0,.2);
+}
+.card header {
+	padding: 20px;
+	border-bottom: 1px solid #ddd;
+	height: 50px;
+}
+.card header h3, .card header h4 {
+	line-height: 10px;
+}
+
+/** Grouped Cards **/
+
+ul.grouped-cards {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0 40px;
+}
+ul.grouped-cards li {
+	padding: 3%;
+	border-bottom: 1px solid #ddd;
+	margin: 0;
+}
+ul.grouped-cards li:hover {
+	cursor: pointer;
+	box-shadow: 0px 3px 5px rgba(0,0,0,.1);
+}
+/*#booking-page-card {
+	background: url('../img/booking-page.png') no-repeat left top;
+}*/
+/*********************************************
+	Dilalogs	
+*********************************************/
+
+.dialog-overlay {
+	display: none;
+	position: fixed;
+	background: rgba(0,0,0,.6);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 900;
+}
+.dialog-wrapper {
+	background: #fff;
+	width: 100%;
+	max-width: 1140px;
+	min-width: 900px;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	z-index: 1000;
+	top: 0%;
+	left: 0%;
+	box-shadow: 0px 3px 25px rgba(0,0,0,.4);
+/*	border-radius: 6px;*/
+}
+
+/** Dialog Header **/
+.dialog-wrapper header {
+	box-shadow: 0px 2px 4px rgba(0,0,0,.1);
+	padding: 0 1.5em 0 0;
+	min-height: 70px;
+	clear: both;
+	height: 5em;
+	clear: both;
+	z-index: 20;
+	position: relative;
+	background: #00BEB9;
+	background-position: bottom;
+	background-size: cover;
+}
+.dialog-wrapper header h3 {
+	margin-bottom: 0;
+	line-height: 3.5em;
+	color: #fff;
+}
+.dialog-wrapper header a {
+	color: #fff;
+	font-size: 1.2em;
+}
+.dialog-wrapper .close-btn {
+	margin: 29px 25px 0 4%;
+	top: 13px;
+	font-size: 1.3em;
+	display: block;
+	cursor: pointer;
+	color: #fff;
+}
+
+/** Dialog Header **/
+.dialog-body, .dialog-content {
+	position: relative;
+	width: 100%;
+	height: calc(100% - 75px);
+	/* Firefox */
+	height: -moz-calc(100% - 75px);
+	/* WebKit */
+	height: -webkit-calc(100% - 75px);
+	/* Opera */
+	height: -o-calc(100% - 75px);
+	/* Standard */
+	height: calc(100% - 80px);
+}
+.dialog-content {
+	margin-left: 27%;
+	padding: 45px 4% 45px 4%;
+	overflow: auto;
+	position: absolute;
+	padding: 45px 5% 45px 5%;
+	width: 63%;
+	background: #fff;
+}
+.dialog-content h3 {
+	margin-bottom: 10px;
+}
+.dialog-content h3 span {
+	position: relative;
+	top: 3px;
+	margin-right: 5px;
+}
+img.int-screenshot {
+	width: 50%;
+	float: right;
+	max-height: 250px;
+	margin:0 0 3em 5%;
+	box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+}
+img.int-screenshot-full {
+	width: 100%;
+	margin:1em 0;
+}
+
+/** Dialog Sidebar **/
+
+.dialog-sidebar {
+	top: 0;
+	left: 0;
+	position: absolute;
+	height: 100%;
+	border-radius: 0 0 0 6px;
+	overflow: auto;
+	width: 27%;
+	background: #F6F9F9;
+	z-index: 10;
+}
+dialog ul.sidebar-nav {
+	margin: 9% 7% 9% 7%;
+}
+.dialog-sidebar img, .dialog-sidebar button {
+	width: 70%;
+	margin: 15% 15% 10% 15%;
+	max-height: 150px;
+}
+.dialog-sidebar img {
+	box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+	border-radius: 6px;
+}
+.dialog-sidebar button {
+	margin-top: 5px;
+	margin-bottom: 5px;	
+	background: #EDF3F3;
+}
+/** Contact Dialog **/
+
+.contact-sidebar {
+	text-align: center;
+}
+.contact-sidebar img {
+	border-radius: 100%;
+	width: 40%;
+	margin: 15% 30% 15px;
+}
+.contact-sidebar h2 {
+
+	margin: 0 0 10px;
+}
+.contact-sidebar p {
+	margin-bottom: 50px;
+	margin-top: 0px;
+}
+.contact-sidebar a {
+	width: 80%;
+	margin: 5px 10% 5px;
+}
+
+
+/*********************************************
+	Media Queries	
+*********************************************/
+
+@media (max-width:550px) {
+	.small-hide {
+		display: none;
+	}
+	.small-show {
+		display: block;
+	}
+	.container.main-content {
+		margin-top: 80px;
+	}
+}
+@media (max-width:1024px) {
+	.med-hide {
+		display: none;
+	}
+}
+@media (min-width:1140px) {
+	.dialog-wrapper {
+		left: 50%;
+		margin-left: -570px;
+	}
+}
+
+/*********************************************
+	Forms	
+*********************************************/
+
+
+form fieldset.row { 
+	padding: 4% 5% 5%;
+	margin-bottom: 15px;
+	border: 1px solid #ddd;
+	border-bottom: 1px solid #bbb;
+}
+form p {
+	margin: -5px 0 2em;
+	line-height: 1em;
+	font-size: .866667em;
+}
+form input:hover {
+/*	background: #f5f5f5;*/
+	border-bottom: 1px solid #aaa;
+	padding-left: 10px;
+	cursor: pointer;
+} 
+form input:focus
+ {
+	background-color: #fff !important;
+	border: 1px solid #999 !important;
+/*	border-radius: 4px;*/
+	box-shadow: 1px 3px 8px rgba(0,0,0,.1);
+	box-sizing: border-box; 
+	  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+	  curso r: text;
+	  position: relative;
+	  z-index: 1;
+}
+span.on, span.off {
+	height: 7px;
+	width: 7px;
+	background: #09CBD2;
+	display: inline-block;
+	position: absolute;
+	margin-left: 3px;
+	margin-top: 22px;
+	border-radius: 50%;
+}
+.field-row span.on, .field-row span.off {
+	margin-left: -20px;
+}
+span.off {
+	background: #D7DDDD;
+}
+#company-logo {
+	width: 30%;
+	margin-bottom: 1.5em;
+}
+
+/*********************************************
+	Clients	
+*********************************************/
+
+.client-ul {
+	list-style: none;
+	margin-top: 2%;
+}
+.client-ul li {	
+	padding: 2% 1.5%;
+	font-size: 1.2em;
+	font-weight: 400;
+	border: solid 1px #fff;
+	box-shadow: none;
+	margin: 0 3%;
+	color: #5a5a5a;
+}
+.client-ul li div {
+	font-size: .875em;
+	font-weight: 300;
+	color: #999;
+}
+.client-ul li img {
+	border-radius: 50%;
+	margin-right: 25px;
+	height: 50px;
+	width: 50px;
+}
+.client-ul li:hover {
+	cursor: pointer;
+	border: 1px solid #ddd !important;
+	border-radius: 4px;
+	z-index: 100;
+	position: relative;
+	background: #FAFCFC;
+}
+
+/*********************************************
+	Clients	
+*********************************************/
+
+#settings .card span {
+	font-size: 2.2em;
+	text-align: center;
+	margin-top: 5px;
+	color: #0FB5BB;
+}
+#settings .card span.big {
+	font-size: 2.5em;
+}
+#settings .card button {
+	margin-top: 1em;
+}
+
+
+
+/* ============================================================
+  Toggle Switches
+============================================================ */
+.switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 70px;
+  height: 30px;
+  padding: 3px;
+  background-color: white;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #E4ECEC;
+  border-radius: inherit;
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+
+}
+.switch-label:before, .switch-label:after {
+  position: absolute;
+  top: 50%;
+  margin-top: -.5em;
+  line-height: 1;
+  -webkit-transition: inherit;
+  -moz-transition: inherit;
+  -o-transition: inherit;
+  transition: inherit;
+}
+.switch-label:before {
+  content: attr(data-off);
+  right: 11px;
+  color: #999;
+}
+.switch-label:after {
+  content: attr(data-on);
+  left: 11px;
+  color: white;
+  opacity: 0;
+}
+.switch-input:checked ~ .switch-label {
+  background: #11C4CA;
+}
+.switch-input:checked ~ .switch-label:before {
+  opacity: 0;
+}
+.switch-input:checked ~ .switch-label:after {
+  opacity: 1;
+}
+
+.switch-handle {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 28px;
+  height: 28px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+
+.switch-input:checked ~ .switch-handle {
+  left: 44px;
+}
+
+.switch-green > .switch-input:checked ~ .switch-label {
+  background: #4fb845;
+}
+/*********************************************
+	Media Queries
+*********************************************/
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+
+
+
+
+
+
+
